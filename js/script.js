@@ -19,7 +19,7 @@ const calculateExpense = () => {
   }
   // calculate expense
   const expense =
-    parseInt(food) + parseInt(rent) + parseInt(clothes);
+    parseInt(food) + parseInt(clothes);
   console.log( expense)
   // calculate balance
   const balance = parseInt(income) - expense;
