@@ -1,6 +1,8 @@
 console.log('Hello welcome to DOM');
 console.log(document.body);
 
+const liCollection=document.getElementsByTagName('li');
+console.log(liCollection)
 
 const student ={
     name:'ABUL',
