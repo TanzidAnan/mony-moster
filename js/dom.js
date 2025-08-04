@@ -18,3 +18,20 @@ const student ={
         // console.log(time,'study kortese')
     }
 }
+
+    // নতুন আইটেম যোগ করার ফাংশন
+      function addItem() {
+        const ul = document.getElementById("myList");
+        const li = document.createElement("li");
+        li.textContent = "নতুন ফল";
+        ul.appendChild(li);
+      }
+
+      // শেষ আইটেম মুছে ফেলার ফাংশন
+      function removeItem() {
+        const ul = document.getElementById("myList");
+        const lastItem = ul.lastElementChild;
+        if (lastItem) {
+          ul.removeChild(lastItem);
+        }
+      }
