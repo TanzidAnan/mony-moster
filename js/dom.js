@@ -2,7 +2,11 @@ console.log('Hello welcome to DOM');
 console.log(document.body);
 
 const liCollection=document.getElementsByTagName('li');
-console.log(liCollection)
+console.log(liCollection);
+
+for(const list of liCollection){
+    console.log(list.innerText)
+}
 
 const student ={
     name:'ABUL',
