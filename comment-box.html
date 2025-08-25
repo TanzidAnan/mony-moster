@@ -32,8 +32,11 @@
         </div>
     </section>
     <script>
+        // step:add event listener to post button
         document.getElementById('btn-post').addEventListener('click',function(){
-            console.log('tanzid')
+            const commentBox=document.getElementById('new-comment');
+            const newComment =commentBox.value;
+            console.log(newComment)
         })
     </script>
 </body>
