@@ -9,7 +9,7 @@
 
 <body>
     <section>
-        <div>
+        <div id="comment-container">
             <h1>Please add your comment</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ab quod voluptate, iste doloremque
                 quidem! Perferendis, beatae tempore itaque commodi rem quae culpa quis incidunt, temporibus facilis
@@ -34,9 +34,18 @@
     <script>
         // step:add event listener to post button
         document.getElementById('btn-post').addEventListener('click',function(){
+            // step-2:get the comment inside the text area
             const commentBox=document.getElementById('new-comment');
             const newComment =commentBox.value;
             console.log(newComment)
+            // step-3:set the comment inside the comment container
+            const commentContainer =document.getElementById('comment-container');
+            const p = document.createElement('p');
+            p.innerText=newComment;
+            commentContainer.appendChild(p);
+
+            // step-4:clear the text area
+            commentBox.value='';
         })
     </script>
 </body>
